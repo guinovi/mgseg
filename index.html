@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Guillermo Novillo">
+    <meta name="copyright" content="© 2006 MDC">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="MG Security instalación de camaras de seguridad, alarmas, porteros">
+    <meta name="keywords" content="camaras, camaras de seguridad, alarmas, portero, ip, wifi, redes">
     <title>MG Security</title>
     <link rel="stylesheet" href="./app/style/style.css">
     <link rel="shortcut icon" href="./app/img/logo.png" type="image/x-icon">
@@ -10,25 +15,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca017385c2.js" crossorigin="anonymous"></script>
 </head>
-<div class="max-width">
+<!-- <div class="max-width"> -->
     <body>
         <!-- HEADER  -->
         <header class="header">
             <div class="header-uno">
-                <div class="header-titulogo inline">
-                    <img src="./app/img/logo.png" alt="Logo" class="header-logo">
-                    <div class="titulo-subtitulo">
-                        <h1 class="header-titulo titulo-uno inline">MG</h1>
-                        <h1 class="header-titulo titulo-dos inline"> Security</h1>
-                        <h4 class="header-subtitulo">Soluciones para tu hogar</h4>
+                    <div class="header-titulogo">
+                        <img src="./app/img/logo.png" alt="Logo" class="header-logo">
+                        <div class="titulo-subtitulo">
+                            <h1 class="header-titulo titulo-uno inline">MG</h1>
+                            <h1 class="header-titulo titulo-dos inline"> Security</h1>
+                            <h4 class="header-subtitulo">Soluciones para tu hogar</h4>
+                        </div>
                     </div>
-                </div>
-                <nav class="header-nav">
-                    <li class="header-li no-list">Servicios</li>
-                    <li class="header-li no-list">Cámaras</li>
-                    <li class="header-li no-list">Alarmas</li>
-                    <li class="header-li no-list">Contacto</li>
+                <nav class="header-nav no-link no-list">
+                    <li class="header-li no-list"><a href="./app/pages/servicios.html">Servicios</a></li>
+                    <li class="header-li no-list"><a href="./app/pages/camara.html">Cámaras</a></li>
+                    <li class="header-li no-list"><a href="./app/pages/contacto.html">Contacto</a></li>
                 </nav>
                     
                 
@@ -39,36 +44,95 @@
         <main class="main">
             <!-- Section 1 -->
             <section class="section section-uno">
-                <img src="./app/img/slayer2.jpg" alt="presentacion" class="slayer-uno">
+                <article class="backimg">
+                    <div class="text-contein">
+                        <h3 class="subtitle">
+                            DISFRUTA DE LA <br>                        
+                            MAXIMA SEGURIDAD<br>                        
+                            PARA PROTEGER TU CASA<br>                        
+                            Y TU FAMILIA
+                        </h3>
+                        <p class="text">
+                            Controle su hogar o negocio esté donde esté <br>
+                            Controle su alarma desde su celular, tablet o <br>
+                            computadora, en cualquier momento y desde <br>
+                            cualquier lugar del mundo. Podrá ver lo que <br>
+                            sucede, conectar y desconectar su alarma, <br>
+                            saber quién entra o sale.
+                        </p>
+                    </div>
+                </article>    
             </section>
             
             <!-- Section 2 -->
             <section class="section-dos">
-                <img src="./app/img/tip.jpeg" alt="info" class="img section-uno-img">
-                <article class="article-uno">
-                    <p class="p p-uno">CONOCE NUESTROS PRODUCTOS</p>
-                    <p class="p p-dos">Simulá tu presupuesto</p>                     
-                    <p class="p p-cuatro">Luego lo adaptamos a tú necesidad</p>                                            
-                    <p class="p p-tres p-btn">Ingresando aquí</p>
+                <article class="cotizacion no-link article">
+                    <h3 class="title">SOLICITA TU COTIZACIÓN</h3>
+                    <div class="form-contein">
+                        <form action="" id="formCotizacion" class="form-cotizacion">
+                            <!-- <label for="name" class="label label-name">Nombre</label> -->
+                            <!-- <h4 class="text-guide" id="guide">Complete los campos</h4> -->
+                            <input type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Ingrese su Nombre" 
+                                class="input input-name">
+                            <!-- <label for="mail" class="label label-mail">Email</label> -->
+                            <input type="email" 
+                                name="mail" 
+                                id="mail" 
+                                placeholder="Ingrese su Email" 
+                                class="input input-mail"
+                                autocomplete="email">
+                            <input type="tel" 
+                                name="tel" 
+                                id="tel"
+                                placeholder="Ingrese su Telefono"
+                                class="input input-mail">
+                            <div class="btn-section" id="btnSection">
+                                <input type="button" value="Siguiente" id="btnNext" class="btn-next">
+                            </div>
+                            
+                            </form>
+                        </div>
                 </article>
-                    
-                <article class="article-dos">
-                    <p class="p p-uno">CONOCE NUESTROS SERVICIOS</p>
-                    <p class="p p-dos">Simulá tu presupuesto</p>                     
-                    <p class="p p-cuatro">Luego lo adaptamos a tú necesidad</p>                                            
-                    <p class="p p-tres p-btn">Ingresando aquí</p>
-                </article>
-                <img src="./app/img/tip2.jpeg" alt="info" class="img section-uno-img">
-                
-                <img src="./app/img/off1-cuadrado.jpeg" alt="oferta" class="img section-uno-img">
-                <article class="article-tres">
-                </article>
-                <article class="article-cuatro">
-                    <img src="./app/img/off2-cuadrado.jpeg" alt="oferta" class="img section-uno-img">
+                <article class="contacto-main article">
+                    <h3 class="title">CONTÁCTANOS</h3>
+                    <div class="no-link icons">
+                        <a href="https://wa.me/+549351222287" class="block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">3512222874</a>
+                        <a href="https://wa.me/+549351222287" class="block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">3512222874</a>
+                        <a href="https://www.instagram.com/mgsecurty3/" class="block icon" target="_blank"><img src="./app/img/icons/instagram.png" alt="instagram">@mgsecurty3</a>
+                        <a href="mailto:mgsecurty3@gmail.com?Subject=Consulta%20web" class="block icon" target="_blank"><img src="./app/img/icons/gmail.png" alt="gmail">mgsecurty3@gmail.com</a>    
+                    </div>
+
+
+
                 </article>
             </section>
+
+            <!-- Section 3 -->
+            <section class="section-tres">
+                <article class="article-tres">
+                    <div class="max-width">
+                        <div class="text-contein">
+                            <h4 class="subtitle ">CONOCE NUESTROS SERVICIOS</h4>
+                            <ul class="list-productos no-link no-list">
+                                <li><a href="./app/pages/camara.html">Camaras</a></li>
+                                <li><a href="./app/pages/camara.html">Alarmas</a></li>
+                                <li><a href="./app/pages/camara.html">Porteros IP</a></li>
+                                <li><a href="./app/pages/camara.html">Redes</a></li>
+                                <li><a href="./app/pages/camara.html">Instalciones de Aires Acondicionados</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
         </main>
+
+        
     </body>
-</div>
+<!-- </div> -->
 
 </html>

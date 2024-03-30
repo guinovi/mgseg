@@ -1,3 +1,8 @@
+:root{
+    --amarillo: #F9BD07;
+    --titles: "Rubik Mono One", monospace;
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -26,16 +31,22 @@
     list-style: none;
 }
 
-.max-width{
-    max-width: 1360px;
+.no-link-white a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
+    list-style: none;
 }
+
 
 body{
     /* max-width: 95vw; */
     margin: 0 auto;
-    background: rgb(71,65,38);
-    background: radial-gradient(circle, rgba(71,65,38,1) 0%, rgba(94,85,34,1) 49%);
+    background-color: white;
 }
+
+
+
+
 
 /* HEADER  */
 .header{
@@ -44,11 +55,12 @@ body{
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
+    min-height: 80px;
 }
 
 .header .header-uno {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header .header-uno .header-titulogo{
@@ -63,13 +75,13 @@ body{
     max-width: 100px;
 }
 .header .header-uno .header-titulogo .header-titulo{
-    font-family: "Rubik Mono One", monospace;
+    font-family: var(--titles);
     font-weight: 400;
     font-style: normal;
 }
 
 .header .header-uno .header-titulogo .titulo-subtitulo .titulo-dos{
-    color: #F9BD07;
+    color: var(--amarillo);
 }
 
 .header .header-uno .header-titulogo .header-subtitulo{
@@ -78,6 +90,7 @@ body{
 
 .header .header-uno .header-nav{
     /* nav  */
+    padding-right: 15px;
     align-self: center;
     margin-top: 15px;
     float: right;
@@ -88,103 +101,169 @@ body{
 
 
 
+
+
 /*---------- MAIN ---------- */
 .main{
-    /* max-width: 95vw; */
+}
+
+ /* Section 1 */
+.main .section-uno{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.main .section-uno .text-contein{
+    width: 90vw;
     margin: 0 auto;
 }
-
- /* section 1 */
-.main .section-uno{
-
-}
-.main .section-uno .slayer-uno{
+.main .section-uno .backimg{
     width: 100%;
-    height: auto;
+    background-image: url(../img/back_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+.main .section-uno .backimg .subtitle{
+    font-size: 60px;
+    color: var(--amarillo);
+    text-shadow: black 1px 1px;
+    padding-left: 5px;
+}
+.main .section-uno .backimg .text{
+    padding: 20px 0 20px 5px;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    text-shadow: black 1px 1px;
+}
+
+
+
+
 
 /* Section 2 */
 .main .section-dos {
-    max-width: 95vw;
+    max-width: 90vw;
+    min-height: 300px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: minmax(300px, 500px); */
-    gap: 5px;
-    row-gap: 0;
-}
-.main .section-dos .img{
-    max-width: 100%;
-    height: auto;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.main .section-dos .article-uno{
-    /* justify-items: center;
-    align-items: center; */
+.main .section-dos .title{
+    color: var(--amarillo);
+    text-align: center;
+    font-size: large;
+}
+
+.main .section-dos .cotizacion{ 
+
+}
+
+.main .section-dos .cotizacion .form-cotizacion{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
+    min-height: 300px;
 }
 
-.main .section-dos .article-uno .p{
+.main .section-dos .cotizacion .form-cotizacion .label{
+    /* padding: 10px; */
+}
+
+.main .section-dos .cotizacion .form-cotizacion .input{
+    min-width: 350px;
+    min-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.main .section-dos .cotizacion .form-cotizacion .input:hover{
+    cursor: pointer;
+}
+
+.main .section-dos .cotizacion .btn-next{
+    float: right;
+    min-height: 40px;
+    padding: 0 15px;
+    border-radius:20px;
+    background-color: rgb(208, 207, 207);
+    border: 1px;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+.main .section-dos .cotizacion .btn-next:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.main .section-dos .contacto-main{
+
+}
+
+.main .section-dos .contacto-main .icons{
+
+}
+
+.main .section-dos .contacto-main .icon {
+    padding: 30px;
+    color: black;
+}
+
+.main .section-dos .contacto-main .icons img{
+    max-height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* Section 3 */
+.main .section-tres{
+
+}
+.main .section-tres .article-tres{
+    background-image: url(../img/domo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    min-height: 300px;
+    width: 100%;    
+}
+.main .section-tres .article-tres .max-width{
+    width: 90vw;
+    margin: 0 auto;
+}
+.main .section-tres .article-tres .text-contein{
+    float: right;
+    padding: 10px 0;
+    line-height: 40px;
+}
+
+.main .section-tres .article-tres .text-contein .subtitle{
+    font-size: 30px;
+    color: var(--amarillo);
+}
+
+.main .section-tres .article-tres .text-contein .list-productos{
     font-size: 20px;
-    font-weight: 500;
-    padding: 20px;
-    color: whitesmoke;
-
 }
-
-.main .section-dos .article-uno .p-uno{
-    color: whitesmoke;
-    font-style: italic;
-    font-size: 35px;
-}
-
-
-.main .section-dos .article-uno .p-dos{
-    
-}
-
-.main .section-dos .article-uno .p-btn{
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-/* Articulo 2 */
-.main .section-dos .article-dos{
-    /* justify-items: center;
-    align-items: center; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.main .section-dos .article-dos .p{
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px;
-    color: whitesmoke;
-
-}
-
-.main .section-dos .article-dos .p-uno{
-    color: whitesmoke;
-    font-style: italic;
-    font-size: 35px;
-}
-
-
-.main .section-dos .article-dos .p-dos{
-    
-}
-
-.main .section-dos .article-dos .p-btn{
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-
-
 
