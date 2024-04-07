@@ -45,6 +45,21 @@ body{
 }
 
 
+.subrayado::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--amarillo);
+    transform: scale(0,1);
+    transform-origin: center;
+    transition: transform .3s;
+}
+
+.subrayado:hover::after{
+    transform: scale(1,1);
+}
+
+
 
 
 
@@ -56,6 +71,7 @@ body{
     margin: 0 auto;
     background-color: #ffffff;
     min-height: 80px;
+    box-shadow: 1px 1px 10px black;
 }
 
 .header .header-uno {
@@ -63,7 +79,13 @@ body{
     justify-content: space-between;
 }
 
-.header .header-uno .header-titulogo{
+.header .header-uno .header-titulogo a:link, a:visited, .a:active{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header .header-uno .header-a{
     /* title  */
     display: flex;
     align-items: center;
@@ -80,6 +102,7 @@ body{
     font-style: normal;
 }
 
+
 .header .header-uno .header-titulogo .titulo-subtitulo .titulo-dos{
     color: var(--amarillo);
 }
@@ -90,15 +113,12 @@ body{
 
 .header .header-uno .header-nav{
     /* nav  */
-    padding-right: 15px;
+    margin: 0 20px 0 0;
     align-self: center;
-    margin-top: 15px;
     float: right;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
-
-
 
 
 
@@ -267,3 +287,75 @@ body{
     font-size: 20px;
 }
 
+
+
+
+/* Section 4 */
+.main .section-cuatro{
+    width: 95vw;
+    margin-bottom: 10px;
+}
+
+.main .section-cuatro .marcas-contein{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 30px;
+}
+
+.main .section-cuatro .marcas-contein .subtitle{
+    color: var(--amarillo);
+    font-size: 30px;
+    grid-area: 2 / 1 / auto / 4;
+
+}
+
+.main .section-cuatro .marcas-contein img{
+    width: 300px;
+}
+
+
+
+
+/*---------- FOOTER ---------- */
+.footer{
+    min-height: 20vh;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+    box-shadow: 1px 1px 7px black;
+}
+
+.footer .columns-conten{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer .columns-conten .section-1{
+    align-self: center;
+}
+
+.footer .columns-conten .section-1 .footer-titulogo{
+    display: flex;
+}
+
+.footer .columns-conten .section-1 .footer-logo{
+    height: 50px;
+}
+
+.footer .columns-conten .section-1 .footer-titulo{
+    font-size: 25px;
+}
+.footer .columns-conten .section-1 .footer-subtitulo{
+    font-size: 10px;
+}
+
+.footer .columns-conten .section-1 .titulo-2{
+    color: var(--amarillo);
+}
