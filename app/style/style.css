@@ -120,14 +120,16 @@ body{
     gap: 20px;
 }
 
+.header .header-uno .burger-contein{
+    display: none;
+}
+
 
 
 
 /*---------- MAIN ---------- */
 .main{
-    /* max-width: 98vw; */
-    /* width: 100%; */
-    /* margin: 0 auto; */
+   
 }
 
  /* Section 1 */
@@ -446,5 +448,137 @@ footer .columns-conten .section-3 .icon img{
 }
 
 @media screen and (width < 750px){
-    body {background-color: blue;}
+    .body{
+        width: 100vw;
+    }
+     /* HEADER  */
+     .header{
+        position: relative;
+        min-height: auto;
+     }
+     .header .header-uno {
+        padding: 0 5vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .header-uno .header-titulogo {
+        font-size: 0.6em;
+    }
+    .header .header-uno .header-titulogo .header-logo{
+        max-width: 70px;
+    }
+    
+    .header .header-uno .header-nav{
+        /* nav  */
+        margin: 0 20px 0 0;
+        float: none;
+        display: none;
+    }
+    .header .header-uno .burger-contein{
+        display: block;
+        align-self: center;
+    
+    }
+    
+
+     /* Section 1 */
+    .main .section-uno{
+        padding: 0;
+     }
+    .main .section-uno .backimg .subtitle{
+        font-size: 40px;
+    }
+
+    /* Section 2 */
+    .main .section-dos {
+        padding: 15px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .main .section-dos .cotizacion .form-cotizacion{
+    }
+
+
+    .main .section-dos .cotizacion .form-cotizacion .input{
+        min-width: 10px;
+        /* min-height: 10px; */
+        width: 90vw;
+        height: auto;
+        /* width: 200px; */
+    }
+    .main .section-dos .cotizacion .btn-section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+
+    .main .section-dos .contacto-main{
+        margin: 0 auto;
+    }
+
+    /* Section 3 */
+    .main .section-tres .article-tres .text-contein{
+        text-align: right;
+    }
+
+    .main .section-tres .article-tres .text-contein .subtitle{
+        font-size: 20px;
+        width: auto;
+    }
+
+    .main .section-tres .article-tres .text-contein .list-productos{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    
+    /* Section 4 */
+    .main .section-cuatro{
+        margin: 30px 0;
+    }
+
+    .main .section-cuatro .marcas-contein{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main .section-cuatro .marcas-contein .subtitle{
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+        order: -1;
+    }
+    .main .section-cuatro .marcas-contein .img{
+        /* padding: 10px 0; */
+    }
+    .main .section-cuatro .marcas-contein .img-3, .img-5, .img-4, .img-6{
+        margin: 20px 0;
+    }
+
+    /*---------- FOOTER ---------- */
+    .footer{
+    }
+
+    .footer .columns-conten{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
+    .footer .columns-conten .section-1{
+        align-self: center;
+        order: 1;
+    }
+
+    .footer .columns-conten .footer-none {
+        /* display: none; */
+    }
+
 }
