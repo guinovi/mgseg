@@ -73,31 +73,48 @@
                     <h3 class="title">SOLICITA TU COTIZACIÓN</h3>
                     <div class="form-contein">
                         <form action="" id="formCotizacion" class="form-cotizacion">
-                            <!-- <label for="name" class="label label-name">Nombre</label> -->
-                            <!-- <h4 class="text-guide" id="guide">Complete los campos</h4> -->
+
+                            <label for=name">Nombre:
                             <input type="text"
                                 name="name"
                                 id="name"
                                 placeholder="Ingrese su Nombre" 
-                                class="input input-name">
-                            <!-- <label for="mail" class="label label-mail">Email</label> -->
+                                class="input input-name invalid valid"
+                                autocapitalize="words"
+                                autocomplete="name"
+                                maxlength="20"
+                                required>
+                            </label>
+
+                            <label for="">Email:
                             <input type="email" 
                                 name="mail" 
                                 id="mail" 
-                                placeholder="Ingrese su Email" 
-                                class="input input-mail"
-                                autocomplete="email">
+                                placeholder="mgsecurty3@gmail.com" 
+                                class="input input-mail invalid valid"
+                                autocomplete="email"
+                                maxlength="30"
+                                required>
+                            </label>
+
+                            <label for="">Telefono:
                             <input type="tel" 
                                 name="tel" 
                                 id="tel"
-                                placeholder="Ingrese su Telefono"
-                                class="input input-mail">
+                                placeholder="3512222874"
+                                class="input input-mail invalid valid"
+                                autocomplete="tel"
+                                maxlength="10">
+                            </label>
+                            <!-- <input type="hidden" id="timestamp" name="timestamp" value="1286705410" /> -->
                             <div class="btn-section" id="btnSection">
                                 <input type="button" value="Siguiente" id="btnNext" class="btn btn-next">
-                                <input type="button" name="enviar" id="send" value="Enviar" class="btn btn-send">
+                                <input type="submit" name="enviar" id="send" value="Enviar" class="btn btn-send">
                             </div>
-                            
-                            </form>
+                            <!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes -->
+                            <!-- https://codepen.io/nathantaylor/pen/VPKQOr     -->
+                            <!-- https://codepen.io/DVELOPR/pen/NRvYyz -->
+                        </form>
                         </div>
                 </article>
                 <hr class="hr">
@@ -179,8 +196,8 @@
                 <section class="section-3">
                     <h5>CONTACTO</h5>
                     <div class="contact-section no-link">
-                        <a href="https://wa.me/+549351222287" class="footer-none block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">3512222874</a>
-                        <a href="https://wa.me/+549351222287" class="footer-none block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">3541564119</a>
+                        <a href="https://wa.me/+549351222287" class="footer-none block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">351-222-2874</a>
+                        <a href="https://wa.me/+549351222287" class="footer-none block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">3541-56-4119</a>
                         <a href="https://www.instagram.com/mgsecurty3/" class="footer-none block icon" target="_blank"><img src="./app/img/icons/instagram.png" alt="instagram">@mgsecurty3</a>
                         <a href="mailto:mgsecurty3@gmail.com?Subject=Consulta%20web" class="footer-none block icon" target="_blank"><img src="./app/img/icons/gmail.png" alt="gmail">mgsecurty3@gmail.com</a>
                     </div>
