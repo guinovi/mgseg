@@ -70,48 +70,87 @@
             <!-- Section 2 -->
             <section class="section-dos">
                 <article class="cotizacion no-link article">
-                    <h3 class="title">SOLICITA TU COTIZACIÓN</h3>
+                    <h3 class="title title-cotizacion">SOLICITA TU COTIZACIÓN</h3>
                     <div class="form-contein">
                         <form action="" id="formCotizacion" class="form-cotizacion">
+                            <div class="form-dynamic form1" id="form1">
 
-                            <label for=name">Nombre:
-                            <input type="text"
-                                name="name"
-                                id="name"
-                                placeholder="Ingrese su Nombre" 
-                                class="input input-name invalid valid"
-                                autocapitalize="words"
-                                autocomplete="name"
-                                maxlength="20"
-                                required>
-                            </label>
+                                <label for="name">Nombre:
+                                <input type="text"
+                                    name="name"
+                                    id="nameInput"
+                                    placeholder="Ingrese su Nombre" 
+                                    class="input input-name invalid valid"
+                                    autocapitalize="words"
+                                    autocomplete="name"
+                                    maxlength="20"
+                                    required>
+                                </label>
 
-                            <label for="">Email:
-                            <input type="email" 
-                                name="mail" 
-                                id="mail" 
-                                placeholder="mgsecurty3@gmail.com" 
-                                class="input input-mail invalid valid"
-                                autocomplete="email"
-                                maxlength="30"
-                                required>
-                            </label>
+                                <label for="">Email:
+                                <input type="email" 
+                                    name="mail" 
+                                    id="mailInput" 
+                                    placeholder="mgsecurty3@gmail.com" 
+                                    class="input input-mail invalid valid"
+                                    autocomplete="email"
+                                    maxlength="30"
+                                    required>
+                                </label>
 
-                            <label for="">Telefono:
-                            <input type="tel" 
-                                name="tel" 
-                                id="tel"
-                                placeholder="3512222874"
-                                class="input input-mail invalid valid"
-                                autocomplete="tel"
-                                maxlength="10">
-                            </label>
+                                <label for="">Telefono:
+                                <input type="tel" 
+                                    name="tel" 
+                                    id="telInput"
+                                    placeholder="3512222874"
+                                    class="input input-mail invalid valid"
+                                    autocomplete="tel"
+                                    maxlength="10">
+                                </label>
+                            </div>
+                            <div class="form-dynamic form2" id="form2">
+
+                                <h3 class="title">¿Dónde desea colocar Cámaras?</h3>
+                                <input type="button" value="Interior" class="btn" name="interior" id="interiorBtnInput">
+                                <input type="button" value="Exterior" class="btn" name="exterior" id="exteriorBtnInput">
+                                <input type="button" value="Interior y Exterior" class="btn" name="intExt" id="intExtBtnInput">
+                            
+                            </div>
+                            <div class="form-dynamic form3" id="form3">
+
+                                <h3 class="title">La ubicacion de las cámaras es para:</h3>
+                                <input type="button" value="Hogar" class="btn" name="hogar" id="hogarBtnInput">
+                                <input type="button" value="Establecimiento / Comercio" class="btn" name="exterior" id="exteriorBtnInput">
+
+                            </div>
+                            <div class="form-dynamic form4">
+                                <h3 class="title">Planificación de Cámaras: Espacios y Conexiones Exteriores</h3>
+                                <label for="cantidad">Cantidad de ambientes donde desea colocar cámaras:</label>
+                                <input type="number"
+                                name="cantidad"
+                                id="cantCamsInput"
+                                placeholder="6"
+                                class="input input-cantidad input-number"
+                                min="0"          
+                                >
+                                <label for="cantidadCexterior">De los ambientes: ¿Cuántos tienen salida al exterior?</label>
+                                <input type="number"
+                                name="cantidadCexterior"
+                                class="input input-cantidad input-number"
+                                id="cantCamsExtInput"
+                                placeholder="3"
+                                min="0"
+                                >
+
+                            </div>
+            
                             <!-- <input type="hidden" id="timestamp" name="timestamp" value="1286705410" /> -->
                             <div class="btn-section" id="btnSection">
                                 <input type="button" value="Siguiente" id="btnNext" class="btn btn-next">
-                                <input type="submit" name="enviar" id="send" value="Enviar" class="btn btn-send">
+                                <input type="submit" name="enviar" id="btnSend" value="Enviar" class="btn btn-send">
                             </div>
                             <!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes -->
+                            <!-- https://developer.mozilla.org/es/docs/Web/HTML/Element/input/number -->
                             <!-- https://codepen.io/nathantaylor/pen/VPKQOr     -->
                             <!-- https://codepen.io/DVELOPR/pen/NRvYyz -->
                         </form>
