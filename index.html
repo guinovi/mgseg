@@ -70,7 +70,7 @@
             <!-- Section 2 -->
             <section class="section-dos">
                 <article class="cotizacion no-link article">
-                    <h3 class="title title-cotizacion">SOLICITA TU COTIZACIÓN</h3>
+                    <h3 class="title title-cotizacion" id="tituloCotizacion">SOLICITA TU COTIZACIÓN</h3>
                     <div class="form-contein">
                         <form action="" id="formCotizacion" class="form-cotizacion">
                             <div class="form-dynamic form1" id="form1">
@@ -108,21 +108,22 @@
                                     maxlength="10">
                                 </label>
                             </div>
-                            <div class="form-dynamic form2" id="form2">
-
-                                <h3 class="title">¿Dónde desea colocar Cámaras?</h3>
-                                <input type="button" value="Interior" class="btn" name="interior" id="interiorBtnInput">
-                                <input type="button" value="Exterior" class="btn" name="exterior" id="exteriorBtnInput">
-                                <input type="button" value="Interior y Exterior" class="btn" name="intExt" id="intExtBtnInput">
                             
+                            <div class="form-dynamic form2" id="form2">
+                                <h3 class="title display-none">¿Dónde desea colocar Cámaras?</h3>
+                                <input type="button" value="Interior" class="btn display-none" name="interior" id="interiorBtnInput">
+                                <input type="button" value="Exterior" class="btn display-none" name="exterior" id="exteriorBtnInput">
+                                <input type="button" value="Interior y Exterior" class="btn display-none" name="intExt" id="intExtBtnInput">
+                                       
                             </div>
-                            <div class="form-dynamic form3" id="form3">
 
-                                <h3 class="title">La ubicacion de las cámaras es para:</h3>
-                                <input type="button" value="Hogar" class="btn" name="hogar" id="hogarBtnInput">
-                                <input type="button" value="Establecimiento / Comercio" class="btn" name="exterior" id="exteriorBtnInput">
+                            <div class="form-dynamic form3 display-none" id="form3">
+                                  <h3 class="title display-none">La ubicacion de las cámaras es para:</h3>
+                                <input type="button" value="Hogar" class="btn display-none" name="hogar" id="hogarBtnInput">
+                                <input type="button" value="Establecimiento / Comercio" class="btn display-none" name="exterior" id="exteriorBtnInput">
 
                             </div>
+                           
                             <div class="form-dynamic form4">
                                 <h3 class="title">Planificación de Cámaras: Espacios y Conexiones Exteriores</h3>
                                 <label for="cantidad">Cantidad de ambientes donde desea colocar cámaras:</label>

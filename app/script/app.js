@@ -3,12 +3,16 @@
 const burger = document.getElementById("burger");
 const navHeader = document.getElementById('navHeader')
 const subrayado = document.querySelectorAll(".header-li");
+
 //FORM COTIZACION
+const tituloCotizacion = document.getElementById('tituloCotizacion')
 const btnNext = document.getElementById('btnNext');
 const btnSend = document.getElementById('btnSend');
-const form1 = document.getElementById('form1');
-const form2 = document.getElementById('form2');
-const form3 = document.getElementById('form3');
+const form1 = document.getElementById('form1');     //FORM 1
+const nameInput = document.getElementById('nameInput')
+const mailInput = document.getElementById('mailInput')
+const form2 = document.getElementById('form2');     //FORM 2
+const form3 = document.getElementById('form3');     //FORM 3
 
 
 
@@ -29,13 +33,23 @@ burger.addEventListener('click', () => {
 });
 
 /* FORM  COTIZACION*/
-btnNext.addEventListener('click', ()=>{
+btnNext.addEventListener('click', (click)=>{
+    if ((nameInput.value && mailInput.value) != "" ) {
+       formulario1()
+    }
     
-    btnSend.classList.toggle('display-none')
+})
+
+function formulario1(){
     const formA = Array.from(form1.children)
     formA.forEach((e)=>{
         e.classList.toggle('display-none')
+        tituloCotizacion.classList.toggle('display-none')
+        btnSend.classList.toggle('display-none')
+        btnNext.classList.toggle('display-none')
     })
-})
-
-
+    const fromB = Array.from(form2.children)
+    fromB.forEach((e)=>{
+        e.classList.toggle('display-none')
+    })
+}
