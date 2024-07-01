@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autor" content="Guillermo Novillo">
+    <meta name="author" content="Guillermo Novillo">
     <meta name="copyright" content="© 2006 MDC">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="MG Security instalación de camaras de seguridad, alarmas, porteros">
-    <meta name="keywords" content="camaras, camaras de seguridad, alarmas, portero, ip, wifi, redes">
+    <meta name="description" content="MG Security - Instalación de cámaras de seguridad, alarmas y porteros IP para proteger tu hogar y negocio.">
+    <meta name="keywords" content="cámaras de seguridad, alarmas, porteros IP, redes, seguridad en hogar, seguridad en negocio">
     <title>MG Security</title>
     <link rel="stylesheet" href="./app/style/style.css">
     <link rel="shortcut icon" href="./app/img/logo.png" type="image/x-icon">
@@ -34,9 +34,10 @@
                 </div>
                 <div class="burger-contein" id="burger"><i class="fa-solid fa-bars fa-lg"></i></div>                  
                 <nav class="header-nav no-link no-list" id="navHeader">
-                    <li class="header-li no-list subrayado"><a href="./app/pages/servicios.html">Servicios</a></li>
-                    <li class="header-li no-list subrayado"><a href="./app/pages/camara.html">Cámaras</a></li>
-                    <li class="header-li no-list subrayado"><a href="./app/pages/contacto.html">Contacto</a></li>
+                    <li class="header-li no-list subrayado"><a href="#serviciosSection">Servicios</a></li>
+                    <li class="header-li no-list subrayado"><a href="#camaraSection">Cámaras</a></li>
+                    <li class="header-li no-list subrayado"><a href="#alarmasSection">Alarmas</a></li>
+                    <li class="header-li no-list subrayado"><a href="#contactoSection">Contacto</a></li>
                 </nav>
 
                     
@@ -72,94 +73,51 @@
                 <article class="cotizacion no-link article">
                     <h3 class="title title-cotizacion" id="tituloCotizacion">SOLICITA TU COTIZACIÓN</h3>
                     <div class="form-contein">
-                        <form action="" id="formCotizacion" class="form-cotizacion">
+                        <form action="https://formspree.io/f/mvgpozeg" method="POST" id="formCotizacion" class="form-cotizacion">
                             <div class="form-dynamic form1" id="form1">
-
                                 <label for="name">Nombre:
-                                <input type="text"
-                                    name="name"
-                                    id="nameInput"
-                                    placeholder="Ingrese su Nombre" 
-                                    class="input input-name invalid valid"
-                                    autocapitalize="words"
-                                    autocomplete="name"
-                                    maxlength="20"
-                                    required>
+                                    <input type="text"
+                                        name="name"
+                                        id="nameInput"
+                                        placeholder="Ingrese su Nombre"
+                                        class="input input-name"
+                                        autocapitalize="words"
+                                        autocomplete="name"
+                                        maxlength="20"
+                                        required>
                                 </label>
-
-                                <label for="">Email:
-                                <input type="email" 
-                                    name="mail" 
-                                    id="mailInput" 
-                                    placeholder="mgsecurty3@gmail.com" 
-                                    class="input input-mail invalid valid"
-                                    autocomplete="email"
-                                    maxlength="30"
-                                    required>
+                        
+                                <label for="mail">Email:
+                                    <input type="email"
+                                        name="mail"
+                                        id="mailInput"
+                                        placeholder="mgsecurty3@gmail.com"
+                                        class="input input-mail"
+                                        autocomplete="email"
+                                        maxlength="30"
+                                        required>
                                 </label>
-
-                                <label for="">Telefono:
-                                <input type="tel" 
-                                    name="tel" 
-                                    id="telInput"
-                                    placeholder="3512222874"
-                                    class="input input-mail invalid valid"
-                                    autocomplete="tel"
-                                    maxlength="10">
+                        
+                                <label for="tel">Teléfono:
+                                    <input type="tel"
+                                        name="tel"
+                                        id="telInput"
+                                        placeholder="3512222874"
+                                        class="input input-tel"
+                                        autocomplete="tel"
+                                        maxlength="10">
                                 </label>
-                            </div>
-                            
-                            <div class="form-dynamic form2" id="form2">
-                                <h3 class="title display-none">¿Dónde desea colocar Cámaras?</h3>
-                                <input type="button" value="Interior" class="btn display-none" name="interior" id="interiorBtnInput">
-                                <input type="button" value="Exterior" class="btn display-none" name="exterior" id="exteriorBtnInput">
-                                <input type="button" value="Interior y Exterior" class="btn display-none" name="intExt" id="intExtBtnInput">
-                                       
-                            </div>
-
-                            <div class="form-dynamic form3 display-none" id="form3">
-                                  <h3 class="title display-none">La ubicacion de las cámaras es para:</h3>
-                                <input type="button" value="Hogar" class="btn display-none" name="hogar" id="hogarBtnInput">
-                                <input type="button" value="Establecimiento / Comercio" class="btn display-none" name="exterior" id="exteriorBtnInput">
-
-                            </div>
-                           
-                            <div class="form-dynamic form4">
-                                <h3 class="title">Planificación de Cámaras: Espacios y Conexiones Exteriores</h3>
-                                <label for="cantidad">Cantidad de ambientes donde desea colocar cámaras:</label>
-                                <input type="number"
-                                name="cantidad"
-                                id="cantCamsInput"
-                                placeholder="6"
-                                class="input input-cantidad input-number"
-                                min="0"          
-                                >
-                                <label for="cantidadCexterior">De los ambientes: ¿Cuántos tienen salida al exterior?</label>
-                                <input type="number"
-                                name="cantidadCexterior"
-                                class="input input-cantidad input-number"
-                                id="cantCamsExtInput"
-                                placeholder="3"
-                                min="0"
-                                >
-
-                            </div>
-            
-                            <!-- <input type="hidden" id="timestamp" name="timestamp" value="1286705410" /> -->
+                            </div>                           
+                
                             <div class="btn-section" id="btnSection">
-                                <input type="button" value="Siguiente" id="btnNext" class="btn btn-next">
                                 <input type="submit" name="enviar" id="btnSend" value="Enviar" class="btn btn-send">
                             </div>
-                            <!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes -->
-                            <!-- https://developer.mozilla.org/es/docs/Web/HTML/Element/input/number -->
-                            <!-- https://codepen.io/nathantaylor/pen/VPKQOr     -->
-                            <!-- https://codepen.io/DVELOPR/pen/NRvYyz -->
                         </form>
-                        </div>
+                    </div>
                 </article>
                 <hr class="hr">
                 <article class="contacto-main article">
-                    <h3 class="title">CONTÁCTANOS</h3>
+                    <h3 class="title" id="contactoSection">CONTÁCTANOS</h3>
                     <div class="no-link icons">
                         <a href="https://wa.me/+549351222287" class="block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">351-222-2874</a>
                         <a href="https://wa.me/+549351222287" class="block icon" target="_blank"><img src="./app/img/icons/whatsapp.png" alt="whatsapp">3541-56-4119</a>
@@ -177,12 +135,12 @@
                 <article class="article-tres">
                     <div class="max-width">
                         <div class="text-contein">
-                            <h4 class="subtitle ">CONOCÉ NUESTROS SERVICIOS</h4>
+                            <h4 class="subtitle" id="serviciosSection">CONOCÉ NUESTROS SERVICIOS</h4>
                             <ul class="list-productos no-link no-list">
-                                <li><a href="./app/pages/camara.html">Cámaras</a></li>
-                                <li><a href="./app/pages/camara.html">Alarmas</a></li>
-                                <li><a href="./app/pages/camara.html">Porteros IP</a></li>
-                                <li><a href="./app/pages/camara.html">Redes</a></li>
+                                <li class="list-services"><a id="camaraSection" onclick="">Cámaras</a></li>
+                                <li class="list-services"><a id="alarmasSection">Alarmas</a></li>
+                                <li class="list-services"><a id="porterosSection">Porteros IP</a></li>
+                                <li class="list-services"><a id="redesSection">Redes</a></li>
                             </ul>
                         </div>
                     </div>
@@ -226,10 +184,10 @@
                 <section class="section-2">
                     <h5>SERVICIOS</h5>
                     <ul class="list-services no-link no-list">
-                        <li class="footer-none"><a href="./app/pages/camara.html">Cámaras</a></li>
-                        <li class="footer-none"><a href="./app/pages/camara.html">Alarmas</a></li>
-                        <li class="footer-none"><a href="./app/pages/camara.html">Porteros IP</a></li>
-                        <li class="footer-none"><a href="./app/pages/camara.html">Redes</a></li>
+                        <li class="footer-none" id="camaraSection"><a href="./app/pages/camara.html">Cámaras</a></li>
+                        <li class="footer-none"><a href="#">Alarmas</a></li>
+                        <li class="footer-none"><a href="#">Porteros IP</a></li>
+                        <li class="footer-none"><a href="#">Redes</a></li>
                         
                     </ul>
                 </section>
@@ -243,9 +201,9 @@
                     </div>
                 </section>
             </div>
+            <p class="copy-right">© 2024 MG Security. Todos los derechos reservados.</p>
         </footer>
         <script src="./app/script/app.js"></script>        
     </body>
 <!-- </div> -->
-
 </html>
