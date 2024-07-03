@@ -338,14 +338,14 @@ input[type=number] { -moz-appearance:textfield; }
 }
 
 .main .section-tres .article-tres .text-contein .list-productos .sub-menu h2 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     color: var(--amarillo);
     margin-bottom: 10px;
     text-align: center;
 }
 
 .main .section-tres .article-tres .text-contein .list-productos .sub-menu p {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     line-height: 1.4;
     margin-bottom: 10px;
 }
@@ -356,7 +356,7 @@ input[type=number] { -moz-appearance:textfield; }
 }
 
 .main .section-tres .article-tres .text-contein .list-productos .sub-menu ul li {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     line-height: 1.4;
     margin-bottom: 5px;
     text-align: center;
@@ -370,7 +370,7 @@ input[type=number] { -moz-appearance:textfield; }
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 20px;
     color: var(--amarillo);
     outline: none;
     font-weight: 500;
@@ -636,6 +636,22 @@ footer .columns-conten .section-3 .icon img{
     .main .section-tres .article-tres .text-contein .list-productos{
         font-size: 20px;
         letter-spacing: 3px;
+    }
+
+    .main .section-tres .article-tres .text-contein .list-productos .sub-menu h2 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    
+    .main .section-tres .article-tres .text-contein .list-productos .sub-menu p {
+        font-size: 10px;
+    }
+    .main .section-tres .article-tres .text-contein .list-productos .sub-menu ul li {
+        font-size: 10px;
+    }
+    
+    .main .section-tres .article-tres .text-contein .list-productos .sub-menu-contein .close-button {
+        font-size: 20px;
     }
     
     /* Section 4 */
