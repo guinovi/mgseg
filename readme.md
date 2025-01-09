@@ -17,7 +17,6 @@ Bienvenido a **MG Security**, una página web dedicada a proporcionar informaci�
 - **HTML**
 - **CSS**
 - **JavaScript (Vanilla JS)**
-- **Bootstrap**: Para un diseño responsivo y moderno.
 
 ## Instalación
 
